@@ -25,6 +25,12 @@ class ViewController: UIViewController {
             UIImage(named: "picture1")!,
             UIImage(named: "picture3")!
         ]),
+        
+        Post(type: .collage3Video, userName: "John", videoFileName: "Sample Video", content: [
+            UIImage(named: "picture2")!,
+            UIImage(named: "picture5")!,
+            UIImage(named: "picture4")!
+        ])
     ]
     
     override func viewDidLoad() {
