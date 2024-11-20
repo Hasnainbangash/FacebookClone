@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         
         Post(type: .text, userName: "Trevor", content: "The greatest glory in living lies not in never falling, but in rising every time we fall." ),
     
-        Post(type: .image, userName: "Franklin", description: "Natural Picture asdasd assd asd as das d asd as d asd as d ad a d as dsa d asda", content: UIImage(named: "picture4")!),
+        Post(type: .image, userName: "Franklin", description: "Amazing view of night", content: UIImage(named: "picture4")!),
         
         Post(type: .video, userName: "Michael", videoFileName: "Simple Video", content: UIImage(named: "picture5")!),
         
