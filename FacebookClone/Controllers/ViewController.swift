@@ -20,10 +20,10 @@ class ViewController: UIViewController {
         Post(type: .video, userName: "Michael", videoFileName: "Simple Video", content: UIImage(named: "picture5")!),
         
         Post(type: .collage4, userName: "Jimmy", content: [
-            UIImage(named: "picture1")!,
             UIImage(named: "picture2")!,
-            UIImage(named: "picture3")!,
-            UIImage(named: "picture5")!
+            UIImage(named: "picture5")!,
+            UIImage(named: "picture1")!,
+            UIImage(named: "picture3")!
         ]),
     ]
     
