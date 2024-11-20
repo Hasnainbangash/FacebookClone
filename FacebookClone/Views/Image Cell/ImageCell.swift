@@ -23,8 +23,9 @@ class ImageCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func cellData(with image: UIImage) {
-            postImageView.image = image
+    func cellData(with image: UIImage, description: String) {
+        postImageView.image = image
+        descriptionLabel.text = description
     }
     
 }

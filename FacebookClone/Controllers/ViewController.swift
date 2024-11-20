@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         Post(type: .video, userName: "Michael", videoFileName: "Simple Video", content: UIImage(named: "picture5")!),
         
-        Post(type: .collage4, userName: "Jimmy", content: [
+        Post(type: .collage4, userName: "Jimmy", description: "Amazing Collage of Nature Beauty", content: [
             UIImage(named: "picture2")!,
             UIImage(named: "picture5")!,
             UIImage(named: "picture1")!,
@@ -86,8 +86,7 @@ extension ViewController: UITableViewDataSource {
 
         case .image:
             let cell = tableView.dequeueReusableCell(withIdentifier: K.Identifiers.imageCellIdentifier, for: indexPath) as! ImageCell
-            cell.descriptionLabel.text = post.description
-            cell.cellData(with: post.content as! UIImage)
+            cell.cellData(with: post.content as! UIImage, description: post.description ?? "No Data")
             return cell
 
         case .video:
@@ -99,7 +98,7 @@ extension ViewController: UITableViewDataSource {
 
         case .collage4:
             let cell = tableView.dequeueReusableCell(withIdentifier: K.Identifiers.collageCellIdentifier, for: indexPath) as! CollageCell
-            cell.cellData(with: post.content as! [UIImage])
+            cell.cellData(with: post.content as! [UIImage], description: post.description ?? "No Data")
             return cell
 
         case .collage3Video:
@@ -131,11 +130,11 @@ extension ViewController: UITableViewDelegate {
         case .text:
             return 120
         case .image:
-            return 350
+            return 300
         case .video:
             return 250
         case .collage4:
-            return 300
+            return 330
         case .collage3Video:
             return 300
         }
