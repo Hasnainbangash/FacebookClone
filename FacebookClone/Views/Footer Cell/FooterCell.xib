@@ -29,7 +29,7 @@
                                             <constraint firstAttribute="width" constant="39" id="Ygd-wP-poU"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup.fill" catalog="system">
+                                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup" catalog="system">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
@@ -55,7 +55,7 @@
                                             <constraint firstAttribute="height" constant="43" id="dRj-oh-gMn"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="message.fill" catalog="system">
+                                        <buttonConfiguration key="configuration" style="plain" image="message" catalog="system">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
@@ -81,7 +81,7 @@
                                             <constraint firstAttribute="height" constant="43" id="YBH-1B-LHi"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="paperplane.fill" catalog="system">
+                                        <buttonConfiguration key="configuration" style="plain" image="paperplane" catalog="system">
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                     </button>
@@ -107,8 +107,8 @@
                                             <constraint firstAttribute="height" constant="43" id="bmo-qM-8uQ"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right.fill" catalog="system">
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.right" catalog="system">
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="esL-HC-f2b">
@@ -138,9 +138,12 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="arrowshape.turn.up.right.fill" catalog="system" width="128" height="104"/>
-        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
-        <image name="message.fill" catalog="system" width="128" height="114"/>
-        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="104"/>
+        <image name="hand.thumbsup" catalog="system" width="123" height="128"/>
+        <image name="message" catalog="system" width="128" height="116"/>
+        <image name="paperplane" catalog="system" width="128" height="119"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

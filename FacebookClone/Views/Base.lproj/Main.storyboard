@@ -46,7 +46,7 @@
                                                                     <constraint firstAttribute="width" constant="46" id="dCO-Cp-eaC"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="plus.circle.fill" catalog="system">
+                                                                <buttonConfiguration key="configuration" style="plain" image="plus.circle" catalog="system">
                                                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
                                                             </button>
@@ -68,8 +68,8 @@
                                                                     <constraint firstAttribute="height" constant="29" id="Eub-OE-AZ4"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" image="message.badge.circle.fill.rtl" catalog="system">
-                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="message.badge.circle" catalog="system">
+                                                                    <color key="baseForegroundColor" systemColor="labelColor"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                         </subviews>
@@ -98,7 +98,7 @@
                                                             <constraint firstAttribute="width" constant="46" id="A1n-dD-QGh"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="house.fill" catalog="system">
+                                                        <buttonConfiguration key="configuration" style="plain" image="house" catalog="system">
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
@@ -109,7 +109,7 @@
                                                             <constraint firstAttribute="width" constant="46" id="voN-Du-1Ib"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="person.2.fill" catalog="system">
+                                                        <buttonConfiguration key="configuration" style="plain" image="person.2" catalog="system">
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
@@ -120,7 +120,7 @@
                                                             <constraint firstAttribute="width" constant="46" id="utN-lF-4EK"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="storefront.fill" catalog="system">
+                                                        <buttonConfiguration key="configuration" style="plain" image="storefront" catalog="system">
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
@@ -131,7 +131,7 @@
                                                             <constraint firstAttribute="width" constant="46" id="nyC-U6-xSN"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="person.circle.fill" catalog="system">
+                                                        <buttonConfiguration key="configuration" style="plain" image="person.circle" catalog="system">
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
@@ -142,7 +142,7 @@
                                                             <constraint firstAttribute="width" constant="46" id="qU2-rX-Ryk"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="bell.fill" catalog="system">
+                                                        <buttonConfiguration key="configuration" style="plain" image="bell" catalog="system">
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
@@ -153,7 +153,7 @@
                                                             <constraint firstAttribute="height" constant="29" id="Ncb-OU-Y1C"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="gearshape.fill" catalog="system">
+                                                        <buttonConfiguration key="configuration" style="plain" image="gearshape" catalog="system">
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                     </button>
@@ -193,18 +193,21 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell.fill" catalog="system" width="123" height="128"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
-        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="house" catalog="system" width="128" height="104"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
-        <image name="message.badge.circle.fill.rtl" catalog="system" width="128" height="123"/>
-        <image name="person.2.fill" catalog="system" width="128" height="86"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="storefront.fill" catalog="system" width="128" height="116"/>
+        <image name="message.badge.circle" catalog="system" width="128" height="123"/>
+        <image name="person.2" catalog="system" width="128" height="87"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="plus.circle" catalog="system" width="128" height="123"/>
+        <image name="storefront" catalog="system" width="128" height="111"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
