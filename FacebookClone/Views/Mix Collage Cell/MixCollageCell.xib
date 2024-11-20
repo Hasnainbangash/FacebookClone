@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MixCollageReuseableCell" rowHeight="266" id="KGk-i7-Jjw" customClass="MixCollageCell" customModule="FacebookClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="266"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="266"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="E2v-Sy-Y9x">
+                        <rect key="frame" x="16.666666666666657" y="11.666666666666657" width="335" height="238"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="drE-lD-FzI">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="114"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1kI-cy-zvv">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="114"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="114" id="0ZY-Jy-bfR"/>
+                                            <constraint firstAttribute="width" constant="166" id="P0N-nc-z4q"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EdC-FL-vPK">
+                                        <rect key="frame" x="169" y="0.0" width="166" height="114"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="114" id="jbg-Ap-OeS"/>
+                                            <constraint firstAttribute="width" constant="166" id="mHT-pZ-5Bg"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Crb-st-mQL">
+                                <rect key="frame" x="0.0" y="124" width="335" height="114"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c4B-uR-FID">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="114"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="166" id="B5K-y4-zQY"/>
+                                            <constraint firstAttribute="height" constant="114" id="Zdv-mW-opl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocJ-gt-iS6">
+                                        <rect key="frame" x="169" y="0.0" width="166" height="114"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E2v-Sy-Y9x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11.5" id="3WC-cG-wHT"/>
+                    <constraint firstAttribute="bottom" secondItem="E2v-Sy-Y9x" secondAttribute="bottom" constant="11.5" id="9zP-f2-0nV"/>
+                    <constraint firstItem="E2v-Sy-Y9x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16.5" id="Uk8-UE-hFJ"/>
+                    <constraint firstAttribute="trailing" secondItem="E2v-Sy-Y9x" secondAttribute="trailing" constant="16.5" id="xBc-cG-gg3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageView1" destination="1kI-cy-zvv" id="CEr-6h-16v"/>
+                <outlet property="imageView2" destination="EdC-FL-vPK" id="Y1U-6b-gna"/>
+                <outlet property="imageView3" destination="c4B-uR-FID" id="Kzn-v5-bYk"/>
+                <outlet property="videoContainerView" destination="ocJ-gt-iS6" id="mpE-Mb-exx"/>
+            </connections>
+            <point key="canvasLocation" x="137" y="93"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "facebook-Photoroom Background Removed.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "facebook-Photoroom Background Removed@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "facebook-Photoroom Background Removed@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
