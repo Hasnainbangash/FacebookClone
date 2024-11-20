@@ -33,6 +33,14 @@ class ViewController: UIViewController {
         ])
     ]
     
+    var profileImages = [
+        UIImage(named: "picture2"),
+        UIImage(named: "picture5"),
+        UIImage(named: "picture1"),
+        UIImage(named: "picture4"),
+        UIImage(named: "picture3")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -141,6 +149,7 @@ extension ViewController: UITableViewDelegate {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: K.Identifiers.headerCellIdentifier) as! HeaderCell
         cell.nameLabel.text = post.userName
+        cell.profileImage.image = profileImages[section]
         
         return cell
     }
@@ -157,7 +166,7 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 55
     }
 
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
