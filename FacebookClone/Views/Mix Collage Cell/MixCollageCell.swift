@@ -29,23 +29,6 @@ class MixCollageCell: UITableViewCell {
     
     var player: AVPlayer?
     var playerLayer: AVPlayerLayer?
-
-//    func cellData(with images: [UIImage], videoFileName: String) {
-//        imageView1.image = images[0]
-//        imageView2.image = images[1]
-//        imageView3.image = images[2]
-//        
-//        if let path = Bundle.main.path(forResource: videoFileName, ofType: "mp4") {
-//            let videoURl = URL(fileURLWithPath: path)
-//            let videoPlayer = AVPlayer(url: videoURl)
-//            let playerLayer = AVPlayerLayer(player: videoPlayer)
-//            playerLayer.frame = contentView.bounds
-//            contentView.layer.addSublayer(playerLayer)
-//            videoPlayer.play()
-//        } else {
-//            print("No video available now")
-//        }
-//    }
     
     func cellDataForImages(with images: [UIImage]) {
             imageView1.image = images[0]
@@ -58,8 +41,8 @@ class MixCollageCell: UITableViewCell {
             let videoURl = URL(fileURLWithPath: path)
             let videoPlayer = AVPlayer(url: videoURl)
             let playerLayer = AVPlayerLayer(player: videoPlayer)
-            playerLayer.frame = contentView.bounds
-            contentView.layer.addSublayer(playerLayer)
+            playerLayer.frame = videoContainerView.bounds
+            videoContainerView.layer.addSublayer(playerLayer)
             videoPlayer.play()
         } else {
             print("No video available now")
@@ -68,10 +51,6 @@ class MixCollageCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-//        player?.pause()
-//        playerLayer?.removeFromSuperlayer()
-//        player = nil
-//        playerLayer = nil
         player?.play()
     }
 }

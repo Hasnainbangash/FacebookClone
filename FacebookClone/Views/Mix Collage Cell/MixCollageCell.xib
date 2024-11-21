@@ -51,6 +51,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocJ-gt-iS6">
                                         <rect key="frame" x="169" y="0.0" width="166" height="114"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="166" id="noY-uo-mwV"/>
+                                            <constraint firstAttribute="height" constant="114" id="qnZ-0m-PtY"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                             </stackView>
