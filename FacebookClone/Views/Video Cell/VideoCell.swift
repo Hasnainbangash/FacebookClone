@@ -33,6 +33,7 @@ class VideoCell: UITableViewCell {
             let videoPlayer = AVPlayer(url: videoURl)
             let playerLayer = AVPlayerLayer(player: videoPlayer)
             playerLayer.frame = contentView.bounds
+//            playerLayer.videoGravity = .resize
             contentView.layer.addSublayer(playerLayer)
             videoPlayer.play()
         } else {

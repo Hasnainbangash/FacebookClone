@@ -42,6 +42,7 @@ class MixCollageCell: UITableViewCell {
             let videoPlayer = AVPlayer(url: videoURl)
             let playerLayer = AVPlayerLayer(player: videoPlayer)
             playerLayer.frame = videoContainerView.bounds
+            playerLayer.videoGravity = .resize
             videoContainerView.layer.addSublayer(playerLayer)
             videoPlayer.play()
         } else {
