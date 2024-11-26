@@ -142,9 +142,6 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let post = posts[section]
-        print("-------------------------------------------------")
-        print(section)
-        print("-------------------------------------------------")
         
         let cell = tableView.dequeueReusableCell(withIdentifier: K.Identifiers.headerCellIdentifier) as! HeaderCell
         cell.nameLabel.text = post.userName
@@ -155,12 +152,7 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         
-        print("-------------------------------------------------")
-        print(section)
-        print("-------------------------------------------------")
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: K.Identifiers.footerCellIdentifier) as! FooterCell
-        
         return cell
     }
     
